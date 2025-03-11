@@ -1,0 +1,178 @@
+* img{
+  width: 100%;
+}
+{
+  margin: 0; /* Retira qualquer margem padrão de todos os elementos */
+  padding: 0; /* Retira qualquer preenchimento (padding) padrão */
+  box-sizing: border-box; /* Faz com que a largura e altura de um elemento incluam o preenchimento e a borda */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Define uma fonte padrão */
+}
+
+.container-menu {
+  display: flex; /* Organiza os itens do menu em linha (horizontal) */
+  justify-content: space-between; /* Distribui o espaço entre os itens do menu */
+  padding: 20px 20px; /* Adiciona um espaço interno de 20px nas laterais e em cima/embaixo */
+  background-image: linear-gradient(to right,#e7eef3,#00BFB2,#41a5f7,#e7eef3); /* Define uma cor de fundo verde claro */
+}
+
+.menu > a {
+  color: rgb(66, 64, 64); /* Define a cor do texto do link */
+  font-weight: 500; /* Define um peso de fonte médio */
+  margin-right: 15px; /* Dá um espaço de 15px entre os links */
+  text-decoration: none; /* Remove o sublinhado dos links */
+  transition: 1s;
+}
+.menu> a:hover{    /*  mudar cores */
+  background-color: linear-gradient(to right,#e7eef3,#00BFB2,#41a5f7,#e7eef3);
+  color: #7182a7;
+  box-shadow: #0c2866;
+}
+
+.logo > .logo-1 {
+  color: rgb(21, 248, 138); /* Define a cor para a primeira parte do logo */
+}
+
+.logo > .logo-2 {
+  color: rgb(157, 201, 173); /* Define a cor para a segunda parte do logo */
+  font-weight: bold; /* Deixa o texto mais grosso */
+}
+
+/* Seção de apresentação */
+.container {
+  display: flex; /* Organiza o conteúdo em linha */
+  flex-direction: column; /* Organiza os itens de forma vertical */
+  justify-content: center; /* Alinha o conteúdo no centro da tela */
+  padding: 5%; /* Adiciona um preenchimento de 5% em todas as bordas */
+  text-align: center; /* Alinha o texto ao centro */
+}
+
+.container > h1 {
+  color: rgb(66, 64, 64); /* Cor do título principal */
+  font-size: 40px; /* Define o tamanho da fonte do título */
+  font-weight: 300; /* Peso da fonte mais leve */
+}
+
+.container > p {
+  color: rgb(66, 64, 64); /* Cor do texto */
+  font-size: 20px; /* Tamanho da fonte */
+  font-weight: 100; /* Peso da fonte bem leve */
+}
+
+.container > img {
+  margin-top: 30px; /* Adiciona um espaço de 30px acima da imagem */
+  width: 100%; /* Faz a imagem ocupar toda a largura disponível */
+}
+
+/* Seção de conteúdo */
+.container-conteudo {
+  display: flex; /* Organiza os itens de conteúdo em linha */
+  flex-direction: row; /* Alinha os itens de forma horizontal */
+  padding: 0px 5%; /* Adiciona um preenchimento nas laterais */
+  gap: 4%; /* Dá um espaço de 4% entre os itens */
+}
+
+.container-conteudo > img {
+  width: 50%; /* As imagens vão ocupar metade da largura */
+}
+
+.conteudo > h2 {
+  color: rgb(66, 64, 64); /* Cor do subtítulo */
+  font-size: 35px; /* Tamanho do subtítulo */
+  font-weight: 300; /* Peso da fonte mais leve */
+}
+
+.conteudo > p {
+  color: rgb(66, 64, 64); /* Cor do texto */
+  font-size: 20px; /* Tamanho da fonte */
+  font-weight: 100%; /* Peso da fonte leve */
+  line-height: 35px; /* Espaçamento entre linhas */
+  margin-top: 30px; /* Espaçamento acima do texto */
+}
+
+.conteudo-contato {
+  display: flex; /* Organiza os itens de contato em linha */
+  flex-direction: column; /* Organiza em coluna */
+}
+
+.formulario {
+  margin-top: 30px; /* Espaço acima do formulário */
+}
+
+.formulario > .input {
+  display: flex; /* Organiza os campos de entrada em coluna */
+  flex-direction: column;
+  margin-top: 10px; /* Espaço acima dos campos de entrada */
+}
+
+.formulario > .input > label {
+  color: rgb(66, 64, 64); /* Cor das labels */
+  font-size: 18px; /* Tamanho da fonte das labels */
+  font-weight: 100; /* Peso leve para as labels */
+}
+
+.formulario > .input > input {
+  border: 1px solid rgb(66, 64, 64); /* Borda fina ao redor dos campos de entrada */
+  border-radius: 5px; /* Bordas arredondadas */
+  padding: 10px; /* Preenchimento dentro dos campos */
+}
+
+.formulario > .input > input::placeholder {
+  color: rgb(66, 64, 64, 0.3); /* Cor do texto de dica (placeholder) */
+}
+
+.rodape {
+  display: flex; /* Organiza o rodapé em linha */
+  align-items: center; /* Alinha os itens ao centro */
+  flex-direction: column; /* Organiza os itens em coluna */
+  padding: 5px; /* Adiciona um pequeno preenchimento */
+  position: relative; /* Para posicionamento de elementos dentro */
+  background-image: linear-gradient(to right,#e7eef3,#00BFB2,#41a5f7,#e7eef3); /* Cor de fundo do rodapé */
+  border: 0.px solid rgb(17, 15, 15); /* Borda leve em torno do rodapé */
+}
+
+footer > nav > a {
+  text-decoration: none; /* Remove o sublinhado dos links do rodapé */
+  margin-right: 10px; /* Espaço entre os links */
+  color: rgb(66, 64, 64); /* Cor do texto dos links */
+}
+
+body {
+  width: 100vw; /* Largura total da tela */
+  height: 100vh; /* Altura total da tela */
+  background-image: linear-gradient(to right,#e7eef3,#00BFB2,#41a5f7,#e7eef3); /* Cor de fundo verde-azulada */
+}
+/* Estilos para o Carrossel */
+.carrossel {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.carrossel-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carrossel-item {
+  min-width: 100px;
+  margin: 0 10px;
+
+  
+}
+
+.carrossel-item img {
+  width: 100%; /* A largura da imagem será 100% do tamanho do contêiner */
+    height: 100px; /* Defina a altura fixa para todas as imagens */
+    object-fit: cover; /* Ajusta as imagens para preencher a área sem distorcer */
+}
+
+/* Adicionando o efeito de rotação automática */
+@keyframes carrossel-animado {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(-100%); }
+  100% { transform: translateX(0); }
+}
+
+.carrossel-container {
+  animation: carrossel-animado 30s infinite;
+}
